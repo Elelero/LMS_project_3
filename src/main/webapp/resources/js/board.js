@@ -246,23 +246,12 @@ function replyInputBox(i) {
  function checkUpdate(i, j){
 	var result = true;
 	
-	if($('#categoryType').val() == 'all'){
-		alert("카테고리를 선택해주세요!");
-		result= false;
-	}else{
-		$("#categoryType").val();
-	}
-	
 	if($('#boardTitle').val() == ''){
-		$("#boardTitle").text(i);
-	}else{
-		$("#boardTitle").text('');
+		$("#boardTitle").val(i);
 	}
 	
 	if($('#boardContent').val() == ''){
 		$("#boardContent").text(j);
-	}else{
-		$("#boardContent").text('');
 	}
 
 	return result;
